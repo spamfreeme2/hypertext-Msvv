@@ -1,7 +1,7 @@
 var timeVar = new Date();
 console.log(timeVar)
-alert("Hello world");
-docuument.getElementById("#time").html(timeVar)
+// alert("Hello world");
+document.getElementById("#time").html(timeVar)
 //$("#time").html("Tsdcv");
 
 
