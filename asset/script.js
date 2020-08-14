@@ -1,8 +1,6 @@
-var timeVar = new Date();
-console.log(timeVar)
-// alert("Hello world");
-document.getElementById("#time").html(timeVar)
-//$("#time").html("Tsdcv");
+setInterval(function(){
+    var mydate=new Date()
+    document.getElementById('time').innerHTML=mydate},1000)
 
 
 
