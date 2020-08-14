@@ -1,5 +1,8 @@
-
 .image-hover{
         padding:1px;
-        border:1px solid #021a40
+      ;
+}
+.image-hover:hover{
+        padding:2px;
+        border:4px solid #004080;
 }

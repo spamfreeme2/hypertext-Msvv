@@ -1,1 +1,3 @@
 For all transfer of code
+
+Remove all comments from code before sending
