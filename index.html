@@ -23,52 +23,79 @@
 
 		<!-- make line for active navbar -->
 
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<!-- Add profile image and all -->
-				<img src="del.png" class="rounded-circle mr-5" style="width: 4rem;">
-				<a class="navbar-brand" id="Vbox" href="#">V-Box</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#">Mixer</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#">Community</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#">Entertainment</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="#">Store</a>
-					</li>
-				</ul>
-				<!-- Time/ Muted / Battery here-->
-				<span id="time" class="navbar-text">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<!-- Add profile image and all -->
+			<img src="utilities/del.png" class="rounded-circle mr-5" style="width: 4rem;">
+			<a class="navbar-brand" id="Vbox" href="#">V-Box</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
 
-				</span>
-				</div>
-			</nav>
-
-			<div class="my-3"></div>
 			
-			<!--To show recently played game-->
+			<div class="collapse navbar-collapse" id="navbarText">
+			<div class="d-flex justify-content-center">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Mixer</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Community</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Entertainment</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Store</a>
+				</li>
+			</ul>
+			</div>
+			</div>
+			
 
-			<!-- add hover feature for image  -->
-			<div class="card-deck mx-auto">
+			<!-- Time/ Muted / Battery here-->
+
+			<div class="d-flex justify-content-end">
+			
+				<div class="mr-2">
+
+					<svg id="unmuted" data-toggle="tooltip" data-placement="left" title="Click to mute" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-mic-fill mic-hover" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+					<path fill-rule="evenodd" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+					</svg>
+					<svg id="muted" data-toggle="tooltip" data-placement="left" title="Click to unmute" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-mic-mute-fill mic-hover" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M12.734 9.613A4.995 4.995 0 0 0 13 8V7a.5.5 0 0 0-1 0v1c0 .274-.027.54-.08.799l.814.814zm-2.522 1.72A4 4 0 0 1 4 8V7a.5.5 0 0 0-1 0v1a5 5 0 0 0 4.5 4.975V15h-3a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-3v-2.025a4.973 4.973 0 0 0 2.43-.923l-.718-.719zM11 7.88V3a3 3 0 0 0-5.842-.963L11 7.879zM5 6.12l4.486 4.486A3 3 0 0 1 5 8V6.121zm8.646 7.234l-12-12 .708-.708 12 12-.708.707z"/>
+					</svg>
+
 				
+					<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-battery-half" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M12 5H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"/>
+						<path d="M2 6h5v4H2V6zm12.5 3.5a1.5 1.5 0 0 0 0-3v3z"/>
+					</svg>
+	
+				</div>
+				
+				<span id="time" class="navbar-text align-text-top">
+				</span>
+				
+				</div>
+		</nav>
+			<div class="my-3"></div>
+
+			<!--To show recently played game-->
+			<div class="card-deck mx-auto">
+
 				<div class="card mb-3">
 				<div class="row no-gutters">
 					<div class="col-md-4">
 					<div class="d-flex justify-content-center my-5">
-					<div class="card mx-4 border-0" style="width: 18rem;">
-						<img src="del.png" class="card-img-top px-2 image-hover " alt="...">
-						<div class="center-Img">RESUME</div>
+						<div class="card mx-4 border-0 containerImg" style="width: 18rem;">
+							<img src="utilities/del.png" class="card-img-top px-2 image-hover " alt="...">
+							<div class="center-Img">
+									<div class="TextBlock">Resume</div>
+							</div>
 
 					</div>
 					</div>
@@ -82,19 +109,21 @@
 					<h1 class="text-dark font-weight-bolder">Rainbow Seige</h1>
 
 				</div>
-				
+
 					</div>
 
 						<div class="mt-md-5">
 							<br>
 							<div class="container">
 							<div class="row">
+
 							<!-- used col for align vertical used table align for text near img-->
 							<div class="col">
+
 								<table style="height: 100px;">
 									<tbody>
 										<tr>
-										<td class="align-baseline"><img src="del.png" class="rounded-circle" style="width: 5rem;"></td>
+										<td class="align-baseline"><img src="utilities/del.png" class="rounded-circle" style="width: 5rem;"></td>
 										<td class="align-middle"> <h5 class="mx-1">eugai</h5> </td>
 										<!-- Try to add another text below-->
 										</tr>
@@ -106,7 +135,7 @@
 									<table style="height: 100px;">
 										<tbody>
 											<tr>
-											<td class="align-baseline"><img src="del.png" class="rounded-circle" style="width: 5rem;"></td>
+											<td class="align-baseline"><img src="utilities/del.png" class="rounded-circle" style="width: 5rem;"></td>
 											<td class="align-middle"> <h5 class="mx-1">eugai</h5> </td>
 											<!-- Try to add another text below-->
 											</tr>
@@ -118,7 +147,7 @@
 										<table style="height: 100px;">
 											<tbody>
 												<tr>
-												<td class="align-baseline"><img src="del.png" class="rounded-circle" style="width: 5rem;"></td>
+												<td class="align-baseline"><img src="utilities/del.png" class="rounded-circle" style="width: 5rem;"></td>
 												<td class="align-middle"> <h5 class="mx-1">eugai</h5> </td>
 												<!-- Try to add another text below-->
 												</tr>
@@ -126,64 +155,49 @@
 											</table>
 										</div>
 
-
 							</div>
 							</div>
 						</div>
 
 					</div>
 				</div>
-				</div>		
+				</div>
 			</div>
-	
-			<!-- Second line of only Games (Used Cards)-->
 
-	
-		
+			<!-- Multiple games (Used Cards)-->
 
-			<table class="table table-borderles">
+			<table class="table table-borderless">
 				<tbody>
 				  <tr>
-					<td class="align-bottom"><img src="del.png" class=" w-75" alt="..."></td>
-					<td class="align-bottom"><img src="del.png" class=" w-75" alt="..."></td>
-					<td class="align-bottom"><img src="del.png" class=" w-75" alt="..."></td>
-					<td class="align-bottom"><img src="del.png" class=" w-75" alt="..."></td>
-				
-					<td><img src="del.png" class="w-100 h-2px " alt="..."> </td>
-					<td><img src="del.png" class="w-100 h-2px " alt="...">  </td>
+					<td class="align-bottom ">
+						
+							<img src="utilities/del.png" class="rounded w-75 image-hover" alt="...">
+							
+					</td>
+
+					<td class="align-bottom"><img src="utilities/del.png" class="rounded w-75" alt="..."></td>
+					<td class="align-bottom"><img src="utilities/del.png" class="rounded w-75" alt="..."></td>
+					<td class="align-bottom"><img src="utilities/del.png" class="rounded w-75" alt="..."></td>
+
+					<td><img src="utilities/del.png" class="w-100 h-2px rounded" alt="..."></td>
+					<td><img src="utilities/del.png" class="w-100 h-2px rounded" alt="..."></td>
 				  </tr>
-				 
+
 				</tbody>
 			  </table>
-		
-
-			  
 
 
 
-		<!--
-			<div class="container">
-			<div class="row">
-				<div class="col">
-			
-					<img src="del.png" class="w-50" alt="...">
-					<img src="del.png" class=" w-50" alt="...">
-					<img src="del.png" class="w-50" alt="...">
-					<img src="del.png" class=" w-50" alt="...">
-				</div>
+		<!-- delete later-->
 
-				<div class="col">
-					
-					<img src="del.png" class="w-100 h-50 " alt="..."> 
-					<img src="del.png" class="w-100 h-50 " alt="...">  
-			
-				</div>
-			</div>
-			</div>
+		<!-- 
+				<div class="bg-danger text-white">
+				<h1 class="">This code is bugged to the core and this is bugging me</h1>
+				<svg width="20em" height="20em" viewBox="0 0 16 16" class="bi bi-bug" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6H4a3.99 3.99 0 0 1 1.333-2.982A3.983 3.983 0 0 1 8 2c1.025 0 1.959.385 2.666 1.018A3.989 3.989 0 0 1 12 6z"/>
+				</svg>
+			</div> 
 		-->
-
-			
-			
 
 
 

@@ -1,21 +1,49 @@
-.image-hover{
-        padding:1px;
-        border-radius:8px;
-}
-.image-hover:hover{
+
+.containerImg {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image-hover {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .center-Img {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .containerImg:hover .image-hover {
         transform: scale(1.02);
         box-shadow: 0 0 25px #1b03a3;
-
         opacity: 0.3;
-}
+      
+      }
+      
+      .containerImg:hover .center-Img{
+        opacity:1;
+      }
+      
+      .TextBlock {
+        background-color: #1b03a3;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+    
 
-.center-Img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  color:#1b03a3;
-  font-weight: bold;
-}
-
+/* Css Files (not to be changed)*/
+    	.mic-hover:hover {
+            color: grey;
+        }
