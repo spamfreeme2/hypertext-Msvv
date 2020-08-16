@@ -1,5 +1,5 @@
-//hiding the text at the start
-$("body").removeClass('bg-light').addClass('bg-dark');
+// //hiding the text at the start
+// $("body").removeClass('bg-light').addClass('bg-dark');
 $("#unmuted").hide()
 
 // Time
