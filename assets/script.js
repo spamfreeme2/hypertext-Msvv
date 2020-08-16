@@ -1,5 +1,5 @@
 //hiding the text at the start
-$(".center-Img").hide();
+$("body").removeClass('bg-light').addClass('bg-dark');
 $("#unmuted").hide()
 
 // Time
@@ -20,16 +20,10 @@ setInterval(function(){
     var time= hours+':'+ minutes+ ' ' + ampm
     document.getElementById('time').innerHTML=time},1000)
 
-    //Show resume on hovering
-$(".image-hover").hover(
-  function() {
-    $(".center-Img").show() ;
-  }, function() {
-    $(".center-Img").hide();
-  }
-);
+//Show resume on hovering
 
 //Microphone Animation
+
 $("#unmuted").click(function(){
   $(this).hide()
   $("#muted").show()
@@ -44,4 +38,3 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
 
-  

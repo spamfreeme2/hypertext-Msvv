@@ -1,49 +1,93 @@
 
 .containerImg {
-        position: relative;
-        width: 50%;
-      }
-      
-      .image-hover {
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-      }
-      
-      .center-Img {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      
-      .containerImg:hover .image-hover {
-        transform: scale(1.02);
-        box-shadow: 0 0 25px #1b03a3;
-        opacity: 0.3;
-      
-      }
-      
-      .containerImg:hover .center-Img{
-        opacity:1;
-      }
-      
-      .TextBlock {
-        background-color: #1b03a3;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
-      }
-    
+  position: relative;
+  width: 50%;
+}
 
-/* Css Files (not to be changed)*/
-    	.mic-hover:hover {
-            color: grey;
-        }
+.image-hover {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.center-Img {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerImg:hover .image-hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #1b03a3;
+  opacity: 0.3;
+
+}
+
+.containerImg:hover .center-Img{
+  opacity:1;
+}
+
+.TextBlock {
+  background-color: #1b03a3;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* Fade in effect */
+.container_fade {
+  position: relative;
+  width: 50%;
+}
+
+  .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.layoutText {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color:  #1b03a3;
+border-radius: 5px;
+}
+
+.secondaryImg:hover .layoutText {
+opacity: 1;
+}
+
+.TextBlock2 {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+
+
+
+/* mic hover color function */
+.mic-hover:hover {
+      color: grey;
+}
