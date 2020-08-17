@@ -40,3 +40,8 @@ $("#muted").click(function () {
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
+
+//Popovers
+$(function () {
+	$('[data-toggle="popover"]').popover();
+});
