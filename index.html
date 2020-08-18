@@ -32,11 +32,136 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<!-- Add profile image and all -->
-			<img
-				src="utilities/profiles/main.png"
-				class="mr-5 rounded-circle"
-				style="width: 4rem;"
-			/>
+
+			<div class="col">
+				<table style="height: 100px;">
+					<tbody>
+						<tr>
+							<td
+								class="align-baseline dropdown dropdown-toggle"
+								id="dropdownMenu2"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<!-- Add bg-dark -->
+								<div
+									class="dropdown-menu Backg text-center"
+									aria-labelledby="dropdownMenu2"
+								>
+									<h3 class="m-4" id="game-dark">
+										Game Completion %
+									</h3>
+									<hr class="bg-white" style="width: 80%;" />
+									<!-- table-dark -->
+									<table
+										class="table table-hover Tabd responsive-table table-borderless"
+									>
+										<tbody>
+											<tr>
+												<th>
+													Game 1
+												</th>
+												<td>
+													<div class="progress">
+														<!-- Hover to show % values -->
+														<div
+															class="progress-bar progress-bar-striped bg-success"
+															role="progressbar"
+															style="width: 80%;"
+															title="80%"
+															aria-valuenow="100"
+															aria-valuemin="0"
+															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
+														></div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													Game 2
+												</th>
+												<td>
+													<div class="progress">
+														<!-- Hover to show % values -->
+														<div
+															class="progress-bar progress-bar-striped bg-warning"
+															role="progressbar"
+															style="width: 50%;"
+															title="50%"
+															aria-valuenow="100"
+															aria-valuemin="0"
+															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
+														></div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													Game 3
+												</th>
+												<td>
+													<div class="progress">
+														<!-- Hover to show % values -->
+														<div
+															class="progress-bar progress-bar-striped bg-warning"
+															role="progressbar"
+															style="width: 40%;"
+															title="40%"
+															aria-valuenow="100"
+															aria-valuemin="0"
+															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
+														></div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													Game 4
+												</th>
+												<td>
+													<div class="progress">
+														<!-- Hover to show % values -->
+														<div
+															class="progress-bar progress-bar-striped bg-danger"
+															role="progressbar"
+															style="width: 25%;"
+															title="25%"
+															aria-valuenow="100"
+															aria-valuemin="0"
+															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
+														></div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<img
+									src="utilities/profiles/main.png"
+									class="rounded-circle dropdown-toggle"
+									style="width: 5rem;"
+								/>
+							</td>
+							<td class="align-middle">
+								<h5 class="mx-1" id="sto">
+									stackoverflow
+								</h5>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
 			<a class="navbar-brand" id="Vbox" href="#">V-Box</a>
 			<button
 				class="navbar-toggler"
@@ -69,6 +194,11 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Store</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" id="Theme"
+								>Dark Mode</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -137,7 +267,7 @@
 
 		<!--recently played game-->
 		<div class="card-deck mx-auto">
-			<div class="card mb-3 backdrop">
+			<div class="card mb-3 backdrop1">
 				<div class="row no-gutters">
 					<div class="col-md-4">
 						<div class="d-flex justify-content-center my-5">
@@ -187,10 +317,13 @@
 														aria-expanded="false"
 													>
 														<div
-															class="dropdown-menu text-white text-center bg-dark"
+															class="dropdown-menu Backg text-center"
 															aria-labelledby="dropdownMenu2"
 														>
-															<h3 class="m-4">
+															<h3
+																class="m-4"
+																id="game-dark"
+															>
 																Game Completion
 																%
 															</h3>
@@ -201,7 +334,7 @@
 																"
 															/>
 															<table
-																class="table table-hover responsive-table table-dark table-borderless"
+																class="table table-hover Tabd responsive-table table-borderless"
 															>
 																<tbody>
 																	<tr>
@@ -345,10 +478,13 @@
 														aria-expanded="false"
 													>
 														<div
-															class="dropdown-menu text-white text-center bg-dark"
+															class="dropdown-menu text-center Backg"
 															aria-labelledby="dropdownMenu2"
 														>
-															<h3 class="m-4">
+															<h3
+																class="m-4"
+																id="gamr-dark"
+															>
 																Game Completion
 																%
 															</h3>
@@ -359,7 +495,7 @@
 																"
 															/>
 															<table
-																class="table table-hover responsive-table table-dark table-borderless"
+																class="table table-hover responsive-table Tabd table-borderless"
 															>
 																<tbody>
 																	<tr>
@@ -503,10 +639,13 @@
 														aria-expanded="false"
 													>
 														<div
-															class="dropdown-menu text-white text-center bg-dark"
+															class="dropdown-menu text-center Backg"
 															aria-labelledby="dropdownMenu2"
 														>
-															<h3 class="m-4">
+															<h3
+																class="m-4"
+																id="game-dark"
+															>
 																Game Completion
 																%
 															</h3>
@@ -517,7 +656,7 @@
 																"
 															/>
 															<table
-																class="table table-hover responsive-table table-dark table-borderless"
+																class="table table-hover Tabd responsive-table table-borderless"
 															>
 																<tbody>
 																	<tr>
@@ -651,59 +790,6 @@
 											</tbody>
 										</table>
 									</div>
-
-									<!-- <div class="col">
-									<table style="height: 100px;">
-										<tbody>
-											<tr>
-												<td class="align-baseline">
-													<img
-														src="utilities/profiles/friend_2.png"
-														class="rounded-circle"
-														style="width: 5rem;"
-													/>
-												</td>
-												<td class="align-middle">
-													<h5 class="mx-1">
-														Overcharge_404
-													</h5>
-													<small
-														class="text-muted"
-														>Last online 1 week
-														ago</small
-													>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-
-								<div class="col">
-									<table style="height: 100px;">
-										<tbody>
-											<tr>
-												<td class="align-baseline">
-													<img
-														src="utilities/profiles/friend_3.png"
-														class="rounded-circle"
-														style="width: 5rem;"
-													/>
-												</td>
-												<td class="align-middle">
-													<h5 class="mx-1">
-														Hypertext{X}
-													</h5>
-													<small
-														class="text-muted font-weight-bold"
-														>Challenged you to a
-														coding
-														competition</small
-													>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div> -->
 								</div>
 							</div>
 						</div>
@@ -712,6 +798,41 @@
 			</div>
 		</div>
 
+		<!-- featured games-->
+		<div class="mx-5">
+			<div class="row row-cols-2">
+				<div class="col-mb-4">
+					<div class="card m-2 bg-transparent border-0 secondaryImg">
+						<img
+							src="utilities/featured/YouTube-Logo-white.svg"
+							class="card-img-top rounded-lg image-hover2"
+							alt="..."
+							id="logo-black"
+						/>
+						<div class="layoutText">
+							<div class="TextBlock2">
+								Featured
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-mb-4">
+					<div class="card m-2 bg-transparent border-0 secondaryImg">
+						<img
+							src="utilities/featured/spotify-logo.png"
+							class="card-img-top rounded-lg image-hover2 my-auto"
+							alt="..."
+						/>
+						<div class="layoutText">
+							<div class="TextBlock2">
+								Featured
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Multiple games -->
 		<div class="mx-5">
 			<div class="row row-cols-3">
@@ -802,31 +923,6 @@
 								............................................
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- multiple games level 2-->
-
-		<div class="m-3">
-			<div class="row row-cols-2">
-				<div class="col-mb-4">
-					<div class="card bg-transparent m-2">
-						<img
-							src="utilities/other.jpeg"
-							class="card-img-top rounded"
-							alt="..."
-						/>
-					</div>
-				</div>
-				<div class="col-mb-4">
-					<div class="card bg-transparent m-2">
-						<img
-							src="utilities/other.jpeg"
-							class="card-img-top rounded"
-							alt="..."
-						/>
 					</div>
 				</div>
 			</div>
