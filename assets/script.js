@@ -1,5 +1,4 @@
 $("#unmuted").hide();
-
 // Time
 setInterval(function () {
 	var hours = new Date().getHours();
@@ -45,10 +44,10 @@ $("#Theme").click(function () {
 	if (Themevar) {
 		$(this).text("Light Mode");
 		$("body").addClass("bg-dark").removeClass("bg-white");
-		$(".backdrop1").addClass(".backdrop2").removeClass(".backdrop1");
+		$("#bg").addClass("backdrop2").removeClass("backdrop1");
 		$("nav").addClass("bg-dark").removeClass("bg-light");
 		$(".nav-item:not(.active)").find("a").addClass("text-secondary");
-		$("#time,#Vbox,#game-dark,#sto").addClass("text-white");
+		$("#time,#Vbox,#game-dark,#sto,#res-dark").addClass("text-white");
 		$(".Backg").addClass("bg-dark");
 		$(".Tabd").addClass("table-dark");
 		$(".active").find("a").addClass("text-white");
@@ -63,19 +62,16 @@ $("#Theme").click(function () {
 		$("body").addClass("bg-white").removeClass("bg-dark");
 		$(".Backg").removeClass("bg-dark");
 		$(".Tabd").removeClass("table-dark");
-		$(".backdrop1").removeClass(".backdrop2").addClass(".backdrop1");
+		$("#bg").removeClass("backdrop2").addClass("backdrop1");
 		$("nav").addClass("bg-light").removeClass("bg-dark");
-		$(".nav-item:not(.active)")
-			.find("a")
-			//		.addClass("text-muted")
-			.removeClass("text-secondary");
+		$(".nav-item:not(.active)").find("a").removeClass("text-secondary");
 		$("#logo-black").attr(
 			"src",
 			"utilities/featured/Youtube-Logo-white.svg"
 		);
 		$(".active").find("a").removeClass("text-white");
 
-		$("#time,#Vbox,#sto,#game-dark").removeClass("text-white");
+		$("#time,#Vbox,#sto,#game-dark,#res-dark").removeClass("text-white");
 
 		$("svg").removeClass("text-white");
 		$(".time").css("color", "black");
