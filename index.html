@@ -279,6 +279,7 @@
 									src="utilities/games/last_of_us_2.png"
 									class="card-img-top bg-transparent rounded-lg image-hover"
 									alt="..."
+									id="1"
 								/>
 								<div class="center-Img">
 									<div class="TextBlock">Resume</div>
@@ -815,12 +816,95 @@
 				<div class="col-mb-4">
 					<div class="card m-2 bg-transparent border-0 secondaryImg">
 						<img
-							src="utilities/featured/YouTube-Logo-white.svg"
+							src="utilities/featured/Youtube-Logo-light.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 							id="logo-black"
 						/>
-						<div class="layoutText-featured">
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="exampleModal"
+							tabindex="-1"
+							aria-labelledby="exampleModalLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog bg-danger">
+								<div class="modal-content bg-danger">
+									<div class="modal-header bg-danger">
+										<h5
+											class="modal-title text-white"
+											id="exampleModalLabel"
+										>
+											<svg
+												width="1em"
+												height="1em"
+												viewBox="0 0 16 16"
+												class="bi bi-exclamation-triangle-fill"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+												/>
+											</svg>
+
+											Failed to connect
+										</h5>
+										<button
+											type="button"
+											class="close"
+											data-dismiss="modal"
+											aria-label="Close"
+										>
+											<span aria-hidden="true"
+												>&times;</span
+											>
+										</button>
+									</div>
+									<div class="modal-body">
+										<p class="text-white text-center">
+											<svg
+												width="3em"
+												height="3em"
+												viewBox="0 0 16 16"
+												class="bi bi-exclamation-octagon-fill"
+												fill="currentColor"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+												/>
+											</svg>
+										</p>
+
+										<p class="text-white">
+											Sorry we could not connect to the
+											internet! Only offline services are
+											working
+										</p>
+									</div>
+									<div class="modal-footer">
+										<button
+											type="button"
+											class="btn btn-outline-light btn-lg btn-block"
+											data-dismiss="modal"
+										>
+											Close
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="layoutText-featured"
+							data-toggle="modal"
+							data-target="#exampleModal"
+						>
 							<div class="TextBlock2">
 								<h3 class="text-auto">Featured</h3>
 							</div>
@@ -835,7 +919,11 @@
 							class="card-img-top rounded-lg image-hover2 my-auto"
 							alt="..."
 						/>
-						<div class="layoutText-featured">
+						<div
+							class="layoutText-featured"
+							data-toggle="modal"
+							data-target="#exampleModal"
+						>
 							<div class="TextBlock2">
 								<h3 class="text-auto">Featured</h3>
 							</div>
@@ -845,10 +933,13 @@
 			</div>
 		</div>
 		<!-- Multiple games -->
-		<div class="mx-5">
+		<div class="mx-5 mt-5">
 			<div class="row row-cols-3">
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg border-0">
+					<div
+						class="card m-2 bg-transparent secondaryImg border-0 changeio"
+						id="2"
+					>
 						<img
 							src="utilities/games/cooking-sim.jpg"
 							class="card-img-top rounded-lg image-hover2"
@@ -863,7 +954,10 @@
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg border-0">
+					<div
+						class="card m-2 bg-transparent secondaryImg border-0 changeio"
+						id="3"
+					>
 						<img
 							src="utilities/games/Cyberpunk-2077.jpg"
 							class="card-img-top rounded-lg image-hover2"
@@ -878,7 +972,10 @@
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg border-0">
+					<div
+						class="card m-2 bg-transparent secondaryImg border-0 changeio"
+						id="4"
+					>
 						<img
 							src="utilities/games/uncharted-4.jpg"
 							class="card-img-top rounded-lg image-hover2"
@@ -893,7 +990,10 @@
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg border-0">
+					<div
+						class="card m-2 bg-transparent secondaryImg border-0 changeio"
+						id="5"
+					>
 						<img
 							src="utilities/games/NFS-Heat.jpg"
 							class="card-img-top rounded-lg image-hover2"
@@ -908,7 +1008,10 @@
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg border-0">
+					<div
+						class="card m-2 bg-transparent secondaryImg border-0 changeio"
+						id="6"
+					>
 						<img
 							src="utilities/games/rdr2-img.jpeg"
 							class="card-img-top rounded-lg image-hover2"
@@ -923,7 +1026,10 @@
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg border-0">
+					<div
+						class="card m-2 bg-transparent secondaryImg border-0 changeio"
+						id="7"
+					>
 						<img
 							src="utilities/games/spiderman.jpg"
 							class="card-img-top rounded-lg image-hover2"
