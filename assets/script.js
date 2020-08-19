@@ -53,7 +53,7 @@ $("#Theme").click(function () {
 		$(".active").find("a").addClass("text-white");
 		$("#logo-black").attr(
 			"src",
-			"utilities/featured/Youtube-Logo-dark.svg"
+			"utilities/featured/Youtube-Logo-dark.jpg"
 		);
 		$("svg").addClass("text-white");
 		$("svg").addClass("text-white");
@@ -67,7 +67,7 @@ $("#Theme").click(function () {
 		$(".nav-item:not(.active)").find("a").removeClass("text-secondary");
 		$("#logo-black").attr(
 			"src",
-			"utilities/featured/Youtube-Logo-white.svg"
+			"utilities/featured/Youtube-Logo-light.jpg"
 		);
 		$(".active").find("a").removeClass("text-white");
 

@@ -154,7 +154,7 @@
 							</td>
 							<td class="align-middle">
 								<h5 class="mx-1" id="sto">
-									stackoverflow
+									MSVV_1975
 								</h5>
 							</td>
 						</tr>
@@ -162,7 +162,7 @@
 				</table>
 			</div>
 
-			<a class="navbar-brand" id="Vbox" href="#">V-Box</a>
+			<a class="navbar-brand" id="Vbox" href="index.html">V-Box</a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -179,26 +179,26 @@
 				<div class="d-flex justify-content-center">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#"
+							<a class="nav-link" href="index.html"
 								>Home <span class="sr-only">(current)</span></a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Mixer</a>
+							<a class="nav-link" href="404.html">Mixer</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Community</a>
+							<a class="nav-link" href="404.html">Community</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Entertainment</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Store</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#" id="Theme"
-								>Dark Mode</a
+							<a class="nav-link" href="404.html"
+								>Entertainment</a
 							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="404.html">Store</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="Theme">Dark Mode</a>
 						</li>
 					</ul>
 				</div>
@@ -267,7 +267,7 @@
 
 		<!--recently played game-->
 		<div class="card-deck mx-auto">
-			<div class="card mb-3 backdrop1">
+			<div class="card mb-3 backdrop1" id="bg">
 				<div class="row no-gutters">
 					<div class="col-md-4">
 						<div class="d-flex justify-content-center my-5">
@@ -292,7 +292,7 @@
 								<h3 class="card-title text-muted">
 									Resume Playing
 								</h3>
-								<h1 class="text-dark font-weight-bolder">
+								<h1 class="font-weight-bolder" id="res-dark">
 									Rainbow Seige
 								</h1>
 							</div>
@@ -452,11 +452,14 @@
 														/>
 													</td>
 													<td class="align-middle">
-														<h5 class="mx-1">
+														<h5
+															class="mx-1"
+															id="res-dark"
+														>
 															Franklin
 														</h5>
 														<small
-															class="text-muted"
+															class="text-muted bioinfo"
 															>Last online 1 hour
 															ago</small
 														>
@@ -483,7 +486,7 @@
 														>
 															<h3
 																class="m-4"
-																id="gamr-dark"
+																id="game-dark"
 															>
 																Game Completion
 																%
@@ -613,11 +616,15 @@
 														/>
 													</td>
 													<td class="align-middle">
-														<h5 class="mx-1">
+														<h5
+															class="mx-1"
+															id="res-dark"
+														>
 															Overcharge_404
 														</h5>
 														<small
 															class="text-muted"
+															id="res-dark"
 															>Last online 1 Week
 															ago ago</small
 														>
@@ -774,11 +781,15 @@
 														/>
 													</td>
 													<td class="align-middle">
-														<h5 class="mx-1">
+														<h5
+															class="mx-1"
+															id="res-dark"
+														>
 															Hypertext{X}
 														</h5>
 														<small
 															class="text-muted"
+															id="res-dark"
 															>Invited you to play
 															<strong
 																>Coding
@@ -809,9 +820,9 @@
 							alt="..."
 							id="logo-black"
 						/>
-						<div class="layoutText">
+						<div class="layoutText-featured">
 							<div class="TextBlock2">
-								Featured
+								<h3 class="text-auto">Featured</h3>
 							</div>
 						</div>
 					</div>
@@ -824,9 +835,9 @@
 							class="card-img-top rounded-lg image-hover2 my-auto"
 							alt="..."
 						/>
-						<div class="layoutText">
+						<div class="layoutText-featured">
 							<div class="TextBlock2">
-								Featured
+								<h3 class="text-auto">Featured</h3>
 							</div>
 						</div>
 					</div>
@@ -837,90 +848,90 @@
 		<div class="mx-5">
 			<div class="row row-cols-3">
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg">
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/del.png"
+							src="utilities/games/Cooking sim.png"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								............................................
+								<h4 class="text-auto">Cooking Simulator</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg">
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/del.png"
+							src="utilities/games/Cyberpunk-2077.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								............................................
+								<h4 class="text-auto">Cyberpunk-2077</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg">
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/del.png"
+							src="utilities/games/uncharted-4.jpeg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								............................................
+								<h4 class="text-auto">Uncharted 4</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg">
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/del.png"
+							src="utilities/games/NFS-Heat.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								............................................
+								<h4 class="text-auto">NFS-Heat</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg">
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/del.png"
+							src="utilities/games/rdr2-img.jpeg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								............................................
+								<h4 class="text-auto">RDR-2</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div class="card m-2 bg-transparent secondaryImg">
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/del.png"
+							src="utilities/games/spiderman.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								............................................
+								<h4 class="text-auto">Marvel Spiderman</h4>
 							</div>
 						</div>
 					</div>
@@ -930,6 +941,8 @@
 
 		<!-- Optional JavaScript -->
 		<script src="assets/script.js"></script>
+		<!-- <script src="assets/change.js"></script> -->
+
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
