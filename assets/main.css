@@ -149,7 +149,7 @@
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
 	.text-sizing {
-		font-size: 4rem;
+		font-size: 2.5rem;
 	} /*1rem = 16px*/
 }
 
@@ -178,3 +178,21 @@
 		font-size: 2.75rem;
 	}
 }
+/* Sizing for Main Img on small viewpoints */
+@media (max-width: 575px) {
+	#img-main {
+		width: 3.5rem;
+	}
+}
+@media (min-width: 575px) {
+	#img-main {
+		width: 5rem;
+	}
+}
+
+/* Sizing for Last of us II */
+/* @media (min-width: 580px) and (max-width: 780px) {
+	.LOS-view {
+		width: 50%;
+	}
+} */

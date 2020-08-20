@@ -153,7 +153,7 @@
 								<img
 									src="utilities/profiles/main.png"
 									class="rounded-circle dropdown-toggle"
-									style="width: 5rem;"
+									id="img-main"
 								/>
 							</td>
 							<td class="align-middle">
@@ -271,19 +271,19 @@
 
 		<!--recently played game-->
 		<div class="card-deck mx-auto">
-			<div class="card mb-3 backdrop1" id="bg">
+			<div class="card mb-3 backdrop1 border-0" id="bg">
 				<div class="row no-gutters">
 					<div class="col-md-4">
 						<div class="d-flex justify-content-center my-5">
 							<div
 								class="card mx-4 containerImg"
+								id="1"
 								style="width: 18rem;"
 							>
 								<img
 									src="utilities/games/last_of_us_2.png"
-									class="card-img-top bg-transparent rounded-lg image-hover"
+									class="card-img-top bg-transparent rounded-lg image-hover LOS-view"
 									alt="..."
-									id="1"
 								/>
 								<div class="center-Img">
 									<div class="TextBlock">Resume</div>
@@ -297,7 +297,10 @@
 								<h3 class="card-title text-muted">
 									Resume Playing
 								</h3>
-								<h1 class="font-weight-bolder" id="res-dark">
+								<h1
+									class="font-weight-bolder maintxt"
+									id="res-dark"
+								>
 									Last of us II
 								</h1>
 							</div>

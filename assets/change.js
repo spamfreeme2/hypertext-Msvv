@@ -1,4 +1,4 @@
-const MyDict = [
+const dict = [
 	{
 		id: "1",
 		src: "utilities/del.png",
@@ -35,11 +35,14 @@ const MyDict = [
 		txt: "Spiderman",
 	},
 ];
-let prevState = MyDict[0];
-let mainImg = MyDict[0];
+let prevState = dict[0];
+let mainImg = dict[0];
 
 $(".changeio").click(function () {
-	mainImg = MyDict[$(this).attr("id") - 1];
-	alert(mainImg.txt);
-	$("#1").find("img");
+	mainImg = dict[$(this).attr("id") - 1];
+	//alert(mainImg.txt);
+	$("#" + prevState.id)
+		.find("img")
+		.attr("src", mainImg.src);
+	$(".maintxt").html(mainImg.txt);
 });
