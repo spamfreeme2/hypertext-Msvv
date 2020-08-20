@@ -26,7 +26,7 @@ const MyDict = [
 	},
 	{
 		id: "6",
-		src: "utilities/games/rdr2-img.jpeg",
+		src: "utilities/games/rdr2-img.jpg",
 		txt: "RDR2",
 	},
 	{
