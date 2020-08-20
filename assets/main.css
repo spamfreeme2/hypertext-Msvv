@@ -138,9 +138,9 @@
 	} /*1rem = 16px*/
 }
 
-/* Mobile devices (Mobiles, 320px and up) The navbar toggle appears at this breakpoint */
+/* Mobile devices (Mobiles, 414px and up) The navbar toggle appears at this breakpoint */
 
-@media (min-width: 544px) {
+@media (min-width: 414px) {
 	.text-sizing {
 		font-size: 2rem;
 	} /*1rem = 16px*/
@@ -163,7 +163,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	.text-sizing {
-		font-size: 10rem;
+		font-size: 8rem;
 	} /*1rem = 16px*/
 }
 
