@@ -82,3 +82,6 @@ $("#Theme").click(function () {
 $(function () {
 	$('[data-toggle="popover"]').popover();
 });
+
+//modal Trailer
+

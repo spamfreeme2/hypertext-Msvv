@@ -276,17 +276,51 @@
 					<div class="col-md-4">
 						<div class="d-flex justify-content-center my-5">
 							<div
-								class="card mx-4 containerImg"
+								class="card mx-4 containerImg border-0"
 								id="1"
 								style="width: 18rem;"
 							>
-								<img
-									src="utilities/games/last_of_us_2.png"
-									class="card-img-top bg-transparent rounded-lg image-hover LOS-view"
+								<img id="1img"
+									src="\utilities\games\last_of_us_2.png"
+									class="card-img-top bg-transparent rounded-lg image-hover"
 									alt="..."
 								/>
+
+								<!-- Modal for trailer -->
+								<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+									<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h5 class="modal-title" id="staticBackdropLabel">Trailer Preview</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										</div>
+										<div class="modal-body " id="Trailer">
+											<!-- Add trailer link here -->
+											<div class="embed-responsive embed-responsive-16by9" >
+
+
+												<!-- Title for trailer -->
+												Add Auto turn off for vid a
+												Tried to show using Js
+												<iframe class="embed-responsive-item trailerplace" src="https://www.youtube.com/embed/TXl9GI1p_Os?autoplay=1;"></iframe>
+
+
+											</div>
+										</div>
+										<div class="modal-footer">
+										<button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+									</div>
+								</div>
 								<div class="center-Img">
 									<div class="TextBlock">Resume</div>
+									<div class="my-2"></div>
+									<div class="TextBlock-trailer bg-danger" data-toggle="modal" data-target="#staticBackdrop">
+											Trailer
+									</div>
 								</div>
 							</div>
 						</div>
@@ -300,9 +334,7 @@
 								<h1
 									class="font-weight-bolder maintxt"
 									id="res-dark"
-								>
-									Last of us II
-								</h1>
+								>Last Of Us II</h1>
 							</div>
 						</div>
 
@@ -885,13 +917,13 @@
 						id="2"
 					>
 						<img
-							src="utilities/games/cooking-sim.jpg"
+							src="\utilities\games\cooking-sim.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">Cooking Simulator</h4>
+								<h4 class="text-sizing">Cooking Sim</h4>
 							</div>
 						</div>
 					</div>
@@ -903,25 +935,26 @@
 						id="3"
 					>
 						<img
-							src="utilities/games/Cyberpunk-2077.jpg"
+							src="\utilities\games\cyberpunk-2077.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">Cyberpunk-2077</h4>
+								<h4 class="text-sizing">Cyberpunk 2077</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
+				
 				<div class="col-mb-4">
 					<div
 						class="card m-2 bg-transparent secondaryImg border-0 changeio"
 						id="4"
 					>
 						<img
-							src="utilities/games/uncharted-4.jpg"
+							src="\utilities\games\uncharted-4.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
@@ -939,13 +972,13 @@
 						id="5"
 					>
 						<img
-							src="utilities/games/NFS-Heat.jpg"
+							src="\utilities\games\NFS-Heat.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">NFS-Heat</h4>
+								<h4 class="text-sizing">NFS Heat</h4>
 							</div>
 						</div>
 					</div>
@@ -957,18 +990,19 @@
 						id="6"
 					>
 						<img
-							src="utilities/games/rdr2-img.jpg"
+							src="\utilities\games\rdr2-img.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">RDR-2</h4>
+								<h4 class="text-sizing">Red Dead Redemption</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
+				
 				<div class="col-mb-4">
 					<div
 						class="card m-2 bg-transparent secondaryImg border-0 changeio"
@@ -981,10 +1015,11 @@
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">Marvel Spiderman</h4>
+								<h4 class="text-sizing"> Marvel Spiderman</h4>
 							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>

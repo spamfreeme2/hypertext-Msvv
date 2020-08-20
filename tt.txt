@@ -4,3 +4,121 @@ Remove all comments from code before sending
 
 
 URL for websie : https://hypertext-msvv.netlify.app/
+
+                            Add more games 
+                            
+__________________________________________________________________________________________________________
+Trailers For Games (Original):                |         Raw Link              |            Status
+---------------------------------------------------------------------------------------------------------
+    1: Last of Us part 2 - https://www.youtube.com/watch?v=TXl9GI1p_Os&t=15s  |             Got Embedeble
+    2: RDR2 - https://www.youtube.com/watch?v=eaW0tYpxyp0                     |             Got Embedeble
+    3: Cooking Simulator - https://www.youtube.com/watch?v=umjU1LpbkZ0        |             Got Embedeble
+    4: Need for speen Heat - https://www.youtube.com/watch?v=9ewiJJe_nYI      |             Got Embedeble
+    5: Cyberpunk 2077 - https://www.youtube.com/watch?v=LembwKDo1Dk           |             Got Embedeble
+    6: Marvel spiderman - https://www.youtube.com/watch?v=q4GdJVvdxss         |             Got Embedeble
+    7: Uncharted 4 - https://www.youtube.com/watch?v=hh5HV4iic1Y              |             Got Embedeble
+
+__________________________________________________________________________________________________________
+Trailers For Games (Original):                 Embedeble links                |             Status
+----------------------------------------------------------------------------------------------------------
+    1: Last of Us part 2 -  https://www.youtube.com/embed/TXl9GI1p_Os         |             Linked
+    2: RDR2 -  https://www.youtube.com/embed/eaW0tYpxyp0                      |             Unlinked
+    3: Cooking Simulator - https://www.youtube.com/embed/umjU1LpbkZ0          |             Unlinked
+    4: Need for speen Heat - https://www.youtube.com/embed/9ewiJJe_nYI        |             Unlinked
+    5: Cyberpunk 2077 -  https://www.youtube.com/embed/LembwKDo1Dk            |             Unlinked
+    6: Marvel spiderman - https://www.youtube.com/embed/q4GdJVvdxss           |             Unlinked
+    7: Uncharted 4 -  https://www.youtube.com/embed/hh5HV4iic1Y               |             Unlinked
+
+
+
+Change.js as of 10:43pm Thursday:
+
+
+        // const dict = [
+        // 	{
+        // 		id: "1",
+        // 		src: "utilities/games/last_of_us_2.png",
+        // 		txt: "Last of us 2",
+        // 	},
+        // 	{
+        // 		id: "2",
+        // 		src: "utilities/games/cooking-sim.jpg",
+        // 		txt: "Cooking Simulator",
+        // 	},
+        // 	{
+        // 		id: "3",
+        // 		src: "utilities/games/Cyberpunk-2077.jpg",
+        // 		txt: "Cyberpunk 2077",
+        // 	},
+        // 	{
+        // 		id: "4",
+        // 		src: "utilities/games/uncharted-4.jpg",
+        // 		txt: "Uncharted 4",
+        // 	},
+        // 	{
+        // 		id: "5",
+        // 		src: "utilities/games/NFS-Heat.jpg",
+        // 		txt: "NFS-Heat",
+        // 	},
+        // 	{
+        // 		id: "6",
+        // 		src: "utilities/games/rdr2-img.jpg",
+        // 		txt: "RDR2",
+        // 	},
+        // 	{
+        // 		id: "7",
+        // 		src: "utilities/games/spiderman.jpg",
+        // 		txt: "Spiderman",
+        // 	},
+        // ];
+        // let prevState = dict[0];
+        // let mainImg = dict[0];
+
+        // $("#" + prevState.id)
+        // 	.find("img")
+        // 	.attr("src", mainImg.src);
+        // $(".maintxt").html(mainImg.txt);
+
+        // var dictlength = dict.length + 1;
+        // let imgSit=dict[0];
+
+        // function findObje(i) {
+        // 	let x;
+        // 	dict.findIndex((x) => x.id === "i");
+
+        // 	return x;
+        // }
+
+        // $(".changeio").click(function() {
+        // 	let clickImg=findObje($(this).attr('id'))
+        // 	alert(clickImg);
+
+        // })
+        // 	/*
+        // 	$("#" + prevState.id)
+        // 		.find("img")
+        // 		.attr("src", mainImg.src);
+        // 	$(".maintxt").html(mainImg.txt);
+
+        // 	$("#" + mainImg.id)
+        // 		.find("img")
+        // 		.attr("src", prevState.src);
+
+        // 	$("this").find("h4").html(prevState.txt);
+            
+        // 	let x2=mainImg.id;
+
+        // 	dict[$(this).attr("id")]=1;*/
+
+
+         for (var i = 1; i < dictlength; i++) {
+         	var xyzabc = dict[i];
+         	var abc = i + 1;
+        	//	alert(x.txt);
+         	$("#" + abc)
+        		.find("img")
+        		.attr("src", xyzabc.src);
+         	$("#" + abc)
+         		.find("h4")
+         		.html(xyzabc.txt);
+         }

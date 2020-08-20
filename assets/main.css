@@ -56,6 +56,13 @@
 	font-size: 16px;
 	padding: 16px 32px;
 }
+/* Textblock for trailer */
+
+.TextBlock-trailer {
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
 
 /* Fade in effect */
 .container_fade {
@@ -189,10 +196,3 @@
 		width: 5rem;
 	}
 }
-
-/* Sizing for Last of us II */
-/* @media (min-width: 580px) and (max-width: 780px) {
-	.LOS-view {
-		width: 50%;
-	}
-} */
