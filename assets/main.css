@@ -134,7 +134,7 @@
 
 @media (min-width: 320px) {
 	.text-sizing {
-		font-size: 0.5rem;
+		font-size: 0.7rem;
 	} /*1rem = 16px*/
 }
 
@@ -142,7 +142,7 @@
 
 @media (min-width: 414px) {
 	.text-sizing {
-		font-size: 2rem;
+		font-size: 1rem;
 	} /*1rem = 16px*/
 }
 
@@ -163,7 +163,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	.text-sizing {
-		font-size: 8rem;
+		font-size: 5rem;
 	} /*1rem = 16px*/
 }
 
