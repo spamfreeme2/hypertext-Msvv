@@ -1,25 +1,5 @@
-//To hide and show games- functions defined
-var hidd = true;
-function hider() {
-	for (var i = 6; i <= 20; i++) {
-		$("#" + i)
-			.find("img,h4")
-			.hide();
-	}
-}
+$("#4", "#5", "#6").hide();
 
-function shower() {
-	for (var i = 5; i < 20; i++) {
-		$("#" + i)
-			.find("img,h4")
-			.show();
-	}
-}
-
-//Games hidden at the starting
-hider();
-
-//Change games by clicking
 $(".changeio").click(function () {
 	let mainStateIMg = {
 		elem: $("#1"),
@@ -39,20 +19,8 @@ $(".changeio").click(function () {
 	$("#1").find("img").attr("src", clickedImg);
 	$(".maintxt").html(clickedImgtext);
 
-	//for trailers
+	//trailers
 	$(this).find("h2").html(mainStateIMg.trailer);
 
 	$(".trailerplace").attr("src", Trailersrc);
-});
-
-//hide and show images
-$("#hideandseek").click(function () {
-	if (hidd) {
-		shower();
-		$(this).html("Hide games");
-	} else {
-		hider();
-		$(this).html("Load more games");
-	}
-	hidd = !hidd;
 });

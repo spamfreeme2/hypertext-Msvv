@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+	<!-- remove all comments-->
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
@@ -25,9 +26,13 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body class="cover">
-		<!-- Navbar -->
+		<!-- Navbar added here-->
+
+		<!-- make line for active navbar -->
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<!-- Add profile image and all -->
+
 			<div class="col">
 				<table style="height: 100px;">
 					<tbody>
@@ -39,6 +44,7 @@
 								aria-haspopup="true"
 								aria-expanded="false"
 							>
+								<!-- Add bg-dark -->
 								<div
 									class="dropdown-menu Backg text-center"
 									aria-labelledby="dropdownMenu2"
@@ -47,91 +53,91 @@
 										Game Completion %
 									</h3>
 									<hr class="bg-white" style="width: 80%;" />
-									<!-- table -->
+									<!-- table-dark -->
 									<table
-										class="table table-hover Tabd responsive-table table-borderless text-left"
+										class="table table-hover Tabd responsive-table table-borderless"
 									>
 										<tbody>
-											<tr
-												data-toggle="tooltip"
-												data-placement="left"
-												title="85%"
-											>
+											<tr>
 												<th>
-													Coding Simulator
+													Game 1
 												</th>
 												<td>
 													<div class="progress">
+														<!-- Hover to show % values -->
 														<div
-															class="progress-bar progress-bar-striped bg-success px-4"
+															class="progress-bar progress-bar-striped bg-success"
 															role="progressbar"
-															style="width: 85%;"
+															style="width: 80%;"
+															title="80%"
 															aria-valuenow="100"
 															aria-valuemin="0"
 															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
 														></div>
 													</div>
 												</td>
 											</tr>
-											<tr
-												data-toggle="tooltip"
-												data-placement="left"
-												title="54%"
-											>
+											<tr>
 												<th>
-													Cooking simulator
+													Game 2
 												</th>
 												<td>
 													<div class="progress">
-														<div
-															class="progress-bar progress-bar-striped bg-warning"
-															role="progressbar"
-															style="width: 54%;"
-															aria-valuenow="100"
-															aria-valuemin="0"
-															aria-valuemax="100"
-														></div>
-													</div>
-												</td>
-											</tr>
-											<tr
-												data-toggle="tooltip"
-												data-placement="left"
-												title="50%"
-											>
-												<th>
-													Cyberpunk-2077
-												</th>
-												<td>
-													<div class="progress">
+														<!-- Hover to show % values -->
 														<div
 															class="progress-bar progress-bar-striped bg-warning"
 															role="progressbar"
 															style="width: 50%;"
+															title="50%"
 															aria-valuenow="100"
 															aria-valuemin="0"
 															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
 														></div>
 													</div>
 												</td>
 											</tr>
-											<tr
-												data-toggle="tooltip"
-												data-placement="left"
-												title="25%"
-											>
+											<tr>
 												<th>
-													Red Dead Redemption 2
+													Game 3
 												</th>
 												<td>
 													<div class="progress">
+														<!-- Hover to show % values -->
+														<div
+															class="progress-bar progress-bar-striped bg-warning"
+															role="progressbar"
+															style="width: 40%;"
+															title="40%"
+															aria-valuenow="100"
+															aria-valuemin="0"
+															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
+														></div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													Game 4
+												</th>
+												<td>
+													<div class="progress">
+														<!-- Hover to show % values -->
 														<div
 															class="progress-bar progress-bar-striped bg-danger"
 															role="progressbar"
 															style="width: 25%;"
+															title="25%"
 															aria-valuenow="100"
 															aria-valuemin="0"
 															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
 														></div>
 													</div>
 												</td>
@@ -178,27 +184,18 @@
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="Mixer" href="404.html"
-								>Mixer</a
-							>
+							<a class="nav-link" id="Mixer" href="404.html">Mixer</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="Community" href="404.html"
-								>Community</a
-							>
+							<a class="nav-link" id="Community" href="404.html">Community</a>
 						</li>
 						<li class="nav-item">
-							<a
-								class="nav-link"
-								id="Entertainment"
-								href="404.html"
+							<a class="nav-link" id="Entertainment" href="404.html"
 								>Entertainment</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="Store" href="404.html"
-								>Store</a
-							>
+							<a class="nav-link" id="Store" href="404.html">Store</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#" id="Theme"
@@ -212,10 +209,65 @@
 			<!-- Time/ Muted / Battery here-->
 
 			<div class="d-flex justify-content-end">
+				<div class="mr-2">
+					<svg
+						id="unmuted"
+						data-toggle="tooltip"
+						data-placement="left"
+						title="Click to mute"
+						width="1em"
+						height="1em"
+						viewBox="0 0 16 16"
+						class="bi bi-mic-fill mic-hover"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+						<path
+							fill-rule="evenodd"
+							d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"
+						/>
+					</svg>
+					<svg
+						id="muted"
+						data-toggle="tooltip"
+						data-placement="left"
+						title="Click to unmute"
+						width="1em"
+						height="1em"
+						viewBox="0 0 16 16"
+						class="bi bi-mic-mute-fill mic-hover"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M12.734 9.613A4.995 4.995 0 0 0 13 8V7a.5.5 0 0 0-1 0v1c0 .274-.027.54-.08.799l.814.814zm-2.522 1.72A4 4 0 0 1 4 8V7a.5.5 0 0 0-1 0v1a5 5 0 0 0 4.5 4.975V15h-3a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-3v-2.025a4.973 4.973 0 0 0 2.43-.923l-.718-.719zM11 7.88V3a3 3 0 0 0-5.842-.963L11 7.879zM5 6.12l4.486 4.486A3 3 0 0 1 5 8V6.121zm8.646 7.234l-12-12 .708-.708 12 12-.708.707z"
+						/>
+					</svg>
+
+					<svg
+						width="1.5em"
+						height="1.5em"
+						viewBox="0 0 16 16"
+						class="bi bi-battery-half"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M12 5H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"
+						/>
+						<path d="M2 6h5v4H2V6zm12.5 3.5a1.5 1.5 0 0 0 0-3v3z" />
+					</svg>
+				</div>
+
 				<span id="time" class="navbar-text align-text-top"> </span>
 			</div>
 		</nav>
 		<div class="my-3"></div>
+
+		<!-- Main 404 content-->
 		<div class="text-white text-center">
 			<h1>404 Website Not Found</h1>
 			<h3 class="font-weight-light">
@@ -226,7 +278,7 @@
 			</h3>
 		</div>
 
-		<!--JavaScript Assets -->
+		<!-- Optional JavaScript -->
 		<script src="assets/script.js"></script>
 		<script src="assets/Navbar.js"></script>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
