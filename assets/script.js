@@ -1,4 +1,5 @@
 $("#unmuted").hide();
+//$(".trailerplace").hide();
 // Time
 setInterval(function () {
 	var hours = new Date().getHours();
@@ -47,7 +48,9 @@ $("#Theme").click(function () {
 		$("#bg").addClass("backdrop2").removeClass("backdrop1");
 		$("nav").addClass("bg-dark").removeClass("bg-light");
 		$(".nav-item:not(.active)").find("a").addClass("text-secondary");
-		$("#time,#Vbox,#game-dark,#sto,#res-dark").addClass("text-white");
+		$("#time,#Vbox,#game-dark,#sto,#res-dark,#trail").addClass(
+			"text-white"
+		);
 		$(".Backg").addClass("bg-dark");
 		$(".Tabd").addClass("table-dark");
 		$(".active").find("a").addClass("text-white");
@@ -71,16 +74,20 @@ $("#Theme").click(function () {
 		);
 		$(".active").find("a").removeClass("text-white");
 
-		$("#time,#Vbox,#sto,#game-dark,#res-dark").removeClass("text-white");
+		$("#time,#Vbox,#sto,#game-dark,#res-dark,#trail").removeClass(
+			"text-white"
+		);
 
 		$("svg").removeClass("text-white");
 		$(".time").css("color", "black");
 	}
 });
 
-//Popovers
-$(function () {
-	$('[data-toggle="popover"]').popover();
+$(document).ready(function () {
+	$("#youtubeVideo").on("hidden.bs.modal", function () {
+		var $this = $(this).find("iframe"),
+			tempSrc = $this.attr("src");
+		$this.attr("src", "");
+		$this.attr("src", tempSrc);
+	});
 });
-
-
