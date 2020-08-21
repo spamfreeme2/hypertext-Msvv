@@ -83,5 +83,10 @@ $(function () {
 	$('[data-toggle="popover"]').popover();
 });
 
-//modal Trailer
-
+//For navbar 
+if (window.location.href==="http://localhost:5500/index.html")
+{
+	$('.active').removeClass('active')
+	$('#Home').addClass('active')
+}
+ 

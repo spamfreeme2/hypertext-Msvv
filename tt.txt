@@ -1,7 +1,3 @@
-For all transfer of code
-
-Remove all comments from code before sending
-
     ----------------------------------------------------------
    | URL for websie : https://hypertext-msvv.netlify.app/    |
     ----------------------------------------------------------                                                             
@@ -16,6 +12,7 @@ Trailers For Games (Original):                |         Raw Link              | 
     5: Cyberpunk 2077 - https://www.youtube.com/watch?v=LembwKDo1Dk           |             Got Embedeble
     6: Marvel spiderman - https://www.youtube.com/watch?v=q4GdJVvdxss         |             Got Embedeble
     7: Uncharted 4 - https://www.youtube.com/watch?v=hh5HV4iic1Y              |             Got Embedeble
+    8: Fonza Horizon 4 -               |             Unlinked
 
 __________________________________________________________________________________________________________
 Trailers For Games (Original):                 Embedeble links                |             Status
@@ -27,3 +24,4 @@ Trailers For Games (Original):                 Embedeble links                | 
     5: Cyberpunk 2077 -  https://www.youtube.com/embed/LembwKDo1Dk            |             Linked
     6: Marvel spiderman - https://www.youtube.com/embed/q4GdJVvdxss           |             Linked
     7: Uncharted 4 -  https://www.youtube.com/embed/hh5HV4iic1Y               |             Linked
+    8: Fonza Horizon 4 -               |             Unlinked
