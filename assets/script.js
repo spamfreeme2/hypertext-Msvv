@@ -1,6 +1,4 @@
 $("#unmuted").hide();
-//$(".trailerplace").hide();
-// Time
 setInterval(function () {
 	var hours = new Date().getHours();
 	if (hours >= 12) {
@@ -21,7 +19,6 @@ setInterval(function () {
 	document.getElementById("time").innerHTML = time;
 }, 1000);
 
-//Show resume on hovering
 //Microphone Animation
 
 $("#unmuted").click(function () {
