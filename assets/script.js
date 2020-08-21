@@ -83,10 +83,4 @@ $(function () {
 	$('[data-toggle="popover"]').popover();
 });
 
-//For navbar 
-if (window.location.href==="http://localhost:5500/index.html")
-{
-	$('.active').removeClass('active')
-	$('#Home').addClass('active')
-}
- 
+

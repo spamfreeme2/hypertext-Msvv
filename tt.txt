@@ -12,7 +12,10 @@ Trailers For Games (Original):                |         Raw Link              | 
     5: Cyberpunk 2077 - https://www.youtube.com/watch?v=LembwKDo1Dk           |             Got Embedeble
     6: Marvel spiderman - https://www.youtube.com/watch?v=q4GdJVvdxss         |             Got Embedeble
     7: Uncharted 4 - https://www.youtube.com/watch?v=hh5HV4iic1Y              |             Got Embedeble
-    8: Fonza Horizon 4 -               |             Unlinked
+    8: Fonza Horizon 4 -  https://www.youtube.com/watch?v=zJ477xAIlgU         |             Got Embedeble
+    9: Halo Infinity -   https://www.youtube.com/watch?v=Rh_NXwqFvHc          |             Got Embedeble
+    10: Wasteland 3 -   https://www.youtube.com/watch?v=AwBKZAOB_qw           |             Got Embedeble
+
 
 __________________________________________________________________________________________________________
 Trailers For Games (Original):                 Embedeble links                |             Status
@@ -24,4 +27,6 @@ Trailers For Games (Original):                 Embedeble links                | 
     5: Cyberpunk 2077 -  https://www.youtube.com/embed/LembwKDo1Dk            |             Linked
     6: Marvel spiderman - https://www.youtube.com/embed/q4GdJVvdxss           |             Linked
     7: Uncharted 4 -  https://www.youtube.com/embed/hh5HV4iic1Y               |             Linked
-    8: Fonza Horizon 4 -               |             Unlinked
+    8: Fonza Horizon 4 -  https://www.youtube.com/embed/zJ477xAIlgU           |             Linked
+    9: Halo Infinity -   https://www.youtube.com/embed/Rh_NXwqFvHc            |             Linked
+    10: Wasteland 3 -    https://www.youtube.com/embed/AwBKZAOB_qw            |             Linked
