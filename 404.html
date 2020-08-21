@@ -25,6 +25,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body class="cover">
+		<!-- Navbar -->
+
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="col">
 				<table style="height: 100px;">
@@ -102,7 +104,6 @@
 												</th>
 												<td>
 													<div class="progress">
-														<!-- Hover function -->
 														<div
 															class="progress-bar progress-bar-striped bg-warning"
 															role="progressbar"
@@ -141,19 +142,20 @@
 
 								<img
 									src="utilities/profiles/main.png"
-									class="rounded-circle dropdown-toggle"
+									class="rounded-circle dropdown-toggle img-main"
 									id="img-main"
 								/>
 							</td>
 							<td class="align-middle">
 								<h5 class="mx-1" id="sto">
-									MSVV_1975
+									Msvv-1975
 								</h5>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
+
 			<a class="navbar-brand" id="Vbox" href="index.html">V-Box</a>
 			<button
 				class="navbar-toggler"
@@ -210,59 +212,6 @@
 			<!-- Time/ Muted / Battery here-->
 
 			<div class="d-flex justify-content-end">
-				<div class="mr-2">
-					<svg
-						id="unmuted"
-						data-toggle="tooltip"
-						data-placement="left"
-						title="Click to mute"
-						width="1em"
-						height="1em"
-						viewBox="0 0 16 16"
-						class="bi bi-mic-fill mic-hover"
-						fill="currentColor"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
-						<path
-							fill-rule="evenodd"
-							d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"
-						/>
-					</svg>
-					<svg
-						id="muted"
-						data-toggle="tooltip"
-						data-placement="left"
-						title="Click to unmute"
-						width="1em"
-						height="1em"
-						viewBox="0 0 16 16"
-						class="bi bi-mic-mute-fill mic-hover"
-						fill="currentColor"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M12.734 9.613A4.995 4.995 0 0 0 13 8V7a.5.5 0 0 0-1 0v1c0 .274-.027.54-.08.799l.814.814zm-2.522 1.72A4 4 0 0 1 4 8V7a.5.5 0 0 0-1 0v1a5 5 0 0 0 4.5 4.975V15h-3a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-3v-2.025a4.973 4.973 0 0 0 2.43-.923l-.718-.719zM11 7.88V3a3 3 0 0 0-5.842-.963L11 7.879zM5 6.12l4.486 4.486A3 3 0 0 1 5 8V6.121zm8.646 7.234l-12-12 .708-.708 12 12-.708.707z"
-						/>
-					</svg>
-
-					<svg
-						width="1.5em"
-						height="1.5em"
-						viewBox="0 0 16 16"
-						class="bi bi-battery-half"
-						fill="currentColor"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M12 5H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"
-						/>
-						<path d="M2 6h5v4H2V6zm12.5 3.5a1.5 1.5 0 0 0 0-3v3z" />
-					</svg>
-				</div>
-
 				<span id="time" class="navbar-text align-text-top"> </span>
 			</div>
 		</nav>
@@ -277,7 +226,7 @@
 			</h3>
 		</div>
 
-		<!-- JavaScript Assets -->
+		<!--JavaScript Assets -->
 		<script src="assets/script.js"></script>
 		<script src="assets/Navbar.js"></script>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+	<!-- remove all comments-->
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
@@ -25,9 +26,13 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<!-- Navigaion bar-->
+		<!-- Navbar added here-->
+
+		<!-- make line for active navbar -->
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<!-- Add profile image and all -->
+
 			<div class="col">
 				<table style="height: 100px;">
 					<tbody>
@@ -39,6 +44,7 @@
 								aria-haspopup="true"
 								aria-expanded="false"
 							>
+								<!-- Add bg-dark -->
 								<div
 									class="dropdown-menu Backg text-center"
 									aria-labelledby="dropdownMenu2"
@@ -47,92 +53,91 @@
 										Game Completion %
 									</h3>
 									<hr class="bg-white" style="width: 80%;" />
-									<!-- table -->
+									<!-- table-dark -->
 									<table
-										class="table table-hover Tabd responsive-table table-borderless text-left"
+										class="table table-hover Tabd responsive-table table-borderless"
 									>
 										<tbody>
-											<tr
-												data-toggle="tooltip"
-												data-placement="left"
-												title="85%"
-											>
+											<tr>
 												<th>
-													Coding Simulator
+													Game 1
 												</th>
 												<td>
 													<div class="progress">
+														<!-- Hover to show % values -->
 														<div
-															class="progress-bar progress-bar-striped bg-success px-4"
+															class="progress-bar progress-bar-striped bg-success"
 															role="progressbar"
-															style="width: 85%;"
+															style="width: 80%;"
+															title="80%"
 															aria-valuenow="100"
 															aria-valuemin="0"
 															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
 														></div>
 													</div>
 												</td>
 											</tr>
-											<tr
-												data-toggle="tooltip"
-												data-placement="left"
-												title="54%"
-											>
+											<tr>
 												<th>
-													Cooking simulator
+													Game 2
 												</th>
 												<td>
 													<div class="progress">
-														<div
-															class="progress-bar progress-bar-striped bg-warning"
-															role="progressbar"
-															style="width: 54%;"
-															aria-valuenow="100"
-															aria-valuemin="0"
-															aria-valuemax="100"
-														></div>
-													</div>
-												</td>
-											</tr>
-											<tr
-												data-toggle="tooltip"
-												data-placement="left"
-												title="50%"
-											>
-												<th>
-													Cyberpunk-2077
-												</th>
-												<td>
-													<div class="progress">
-														<!-- Hover function -->
+														<!-- Hover to show % values -->
 														<div
 															class="progress-bar progress-bar-striped bg-warning"
 															role="progressbar"
 															style="width: 50%;"
+															title="50%"
 															aria-valuenow="100"
 															aria-valuemin="0"
 															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
 														></div>
 													</div>
 												</td>
 											</tr>
-											<tr
-												data-toggle="tooltip"
-												data-placement="left"
-												title="25%"
-											>
+											<tr>
 												<th>
-													Red Dead Redemption 2
+													Game 3
 												</th>
 												<td>
 													<div class="progress">
+														<!-- Hover to show % values -->
+														<div
+															class="progress-bar progress-bar-striped bg-warning"
+															role="progressbar"
+															style="width: 40%;"
+															title="40%"
+															aria-valuenow="100"
+															aria-valuemin="0"
+															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
+														></div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													Game 4
+												</th>
+												<td>
+													<div class="progress">
+														<!-- Hover to show % values -->
 														<div
 															class="progress-bar progress-bar-striped bg-danger"
 															role="progressbar"
 															style="width: 25%;"
+															title="25%"
 															aria-valuenow="100"
 															aria-valuemin="0"
 															aria-valuemax="100"
+															data-toggle="tooltip"
+															data-placement="left"
 														></div>
 													</div>
 												</td>
@@ -144,7 +149,7 @@
 								<img
 									src="utilities/profiles/main.png"
 									class="rounded-circle dropdown-toggle"
-									id="img-main"
+									style="width: 5rem;"
 								/>
 							</td>
 							<td class="align-middle">
@@ -174,12 +179,12 @@
 				<div class="d-flex justify-content-center">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" id="Home" href="index.html"
-								>Home <span class="sr-only"></span
-							></a>
+							<a class="nav-link" href="index.html"
+								>Home <span class="sr-only">(current)</span></a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="404.html ">Mixer</a>
+							<a class="nav-link" href="404.html">Mixer</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="404.html">Community</a>
@@ -199,86 +204,83 @@
 				</div>
 			</div>
 
-			<!-- Time -->
+			<!-- Time/ Muted / Battery here-->
+
 			<div class="d-flex justify-content-end">
+				<div class="mr-2">
+					<svg
+						id="unmuted"
+						data-toggle="tooltip"
+						data-placement="left"
+						title="Click to mute"
+						width="1.5em"
+						height="1.5em"
+						viewBox="0 0 16 16"
+						class="bi bi-mic-fill mic-hover"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+						<path
+							fill-rule="evenodd"
+							d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"
+						/>
+					</svg>
+					<svg
+						id="muted"
+						data-toggle="tooltip"
+						data-placement="left"
+						title="Click to unmute"
+						width="1.5em"
+						height="1.5em"
+						viewBox="0 0 16 16"
+						class="bi bi-mic-mute-fill mic-hover"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M12.734 9.613A4.995 4.995 0 0 0 13 8V7a.5.5 0 0 0-1 0v1c0 .274-.027.54-.08.799l.814.814zm-2.522 1.72A4 4 0 0 1 4 8V7a.5.5 0 0 0-1 0v1a5 5 0 0 0 4.5 4.975V15h-3a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-3v-2.025a4.973 4.973 0 0 0 2.43-.923l-.718-.719zM11 7.88V3a3 3 0 0 0-5.842-.963L11 7.879zM5 6.12l4.486 4.486A3 3 0 0 1 5 8V6.121zm8.646 7.234l-12-12 .708-.708 12 12-.708.707z"
+						/>
+					</svg>
+
+					<svg
+						width="2em"
+						height="2em"
+						viewBox="0 0 16 16"
+						class="bi bi-battery-half"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M12 5H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"
+						/>
+						<path d="M2 6h5v4H2V6zm12.5 3.5a1.5 1.5 0 0 0 0-3v3z" />
+					</svg>
+				</div>
+
 				<span id="time" class="navbar-text align-text-top"> </span>
 			</div>
 		</nav>
 		<div class="my-3"></div>
 
-		<!--Main Game-->
+		<!--recently played game-->
 		<div class="card-deck mx-auto">
-			<div class="card mb-3 backdrop1 border-0" id="bg">
+			<div class="card mb-3 backdrop1" id="bg">
 				<div class="row no-gutters">
 					<div class="col-md-4">
 						<div class="d-flex justify-content-center my-5">
 							<div
-								class="card mx-4 containerImg border-0"
-								id="1"
+								class="card mx-4 containerImg"
 								style="width: 18rem;"
 							>
 								<img
-									id="1img"
-									src="\utilities\games\last_of_us_2.png"
+									src="utilities/del.png"
 									class="card-img-top bg-transparent rounded-lg image-hover"
 									alt="..."
 								/>
-
-								<div
-									class="modal fade"
-									id="youtubeVideo"
-									tabindex="-1"
-									role="dialog"
-									aria-labelledby="myModalLabel"
-									aria-hidden="true"
-								>
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header Backg">
-												<h3 id="trail">
-													Trailer
-												</h3>
-												<button
-													type="button"
-													class="close"
-													data-dismiss="modal"
-													aria-label="Close"
-												>
-													<span aria-hidden="true"
-														>&times;</span
-													>
-												</button>
-											</div>
-											<div class="modal-body Backg">
-												<iframe
-													class="trailerplace muted"
-													width="100%"
-													height="315px"
-													src="https://www.youtube.com/embed/TXl9GI1p_Os"
-												></iframe>
-											</div>
-											<div class="modal-footer Backg">
-												<button
-													type="button"
-													class="btn btn-outline-danger"
-													data-dismiss="modal"
-												>
-													Close
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
 								<div class="center-Img">
-									<div
-										class="TextBlock-trailer bg-danger"
-										data-toggle="modal"
-										data-target="#youtubeVideo"
-									>
-										Trailer
-									</div>
-									<div class="my-2"></div>
 									<div class="TextBlock">Resume</div>
 								</div>
 							</div>
@@ -290,19 +292,18 @@
 								<h3 class="card-title text-muted">
 									Resume Playing
 								</h3>
-								<h1
-									class="font-weight-bolder maintxt"
-									id="res-dark"
-								>
-									Last Of Us II
+								<h1 class="font-weight-bolder" id="res-dark">
+									Rainbow Seige
 								</h1>
 							</div>
 						</div>
 
 						<div class="mt-md-5">
-							<!-- Players-->
+							<!-- players-->
 							<div class="container">
 								<div class="row">
+									<!-- used col for align vertical used table align for text near img-->
+
 									<!-- Friend 1 -->
 									<div class="col">
 										<table style="height: 100px;">
@@ -336,108 +337,106 @@
 																class="table table-hover Tabd responsive-table table-borderless"
 															>
 																<tbody>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="left"
-																		title="80%"
-																	>
+																	<tr>
 																		<th>
-																			Marvel
-																			Spiderman
+																			Game
+																			1
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
-																					class="progress-bar progress-bar-striped bg-success px-4"
+																					class="progress-bar progress-bar-striped bg-success"
 																					role="progressbar"
 																					style="
 																						width: 80%;
 																					"
+																					title="80%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
 																	</tr>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="left"
-																		title="55%"
-																	>
+																	<tr>
 																		<th>
-																			Need
-																			for
-																			Speed
-																			Heat
+																			Game
+																			2
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
 																					class="progress-bar progress-bar-striped bg-warning"
 																					role="progressbar"
 																					style="
-																						width: 55%;
+																						width: 50%;
 																					"
+																					title="50%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
 																	</tr>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="left"
-																		title="45%"
-																	>
+																	<tr>
 																		<th>
-																			Uncharted
+																			Game
+																			3
+																		</th>
+																		<td>
+																			<div
+																				class="progress"
+																			>
+																				<!-- Hover to show % values -->
+																				<div
+																					class="progress-bar progress-bar-striped bg-warning"
+																					role="progressbar"
+																					style="
+																						width: 40%;
+																					"
+																					title="40%"
+																					aria-valuenow="100"
+																					aria-valuemin="0"
+																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
+																				></div>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<th>
+																			Game
 																			4
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
-																				<div
-																					class="progress-bar progress-bar-striped bg-warning"
-																					role="progressbar"
-																					style="
-																						width: 45%;
-																					"
-																					aria-valuenow="100"
-																					aria-valuemin="0"
-																					aria-valuemax="100"
-																				></div>
-																			</div>
-																		</td>
-																	</tr>
-																	<tr
-																		title="25%"
-																		data-toggle="tooltip"
-																		data-placement="left"
-																	>
-																		<th>
-																			Coding
-																			Simulator
-																		</th>
-																		<td>
-																			<div
-																				class="progress"
-																			>
+																				<!-- Hover to show % values -->
 																				<div
 																					class="progress-bar progress-bar-striped bg-danger"
 																					role="progressbar"
 																					style="
 																						width: 25%;
 																					"
+																					title="25%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
@@ -502,105 +501,106 @@
 																class="table table-hover responsive-table Tabd table-borderless"
 															>
 																<tbody>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="right"
-																		title="88%"
-																	>
+																	<tr>
 																		<th>
-																			Cyberpunk-2077
+																			Game
+																			1
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
-																					class="progress-bar progress-bar-striped bg-success px-4"
+																					class="progress-bar progress-bar-striped bg-success"
 																					role="progressbar"
 																					style="
-																						width: 88%;
+																						width: 80%;
 																					"
+																					title="80%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
 																	</tr>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="right"
-																		title="50%"
-																	>
+																	<tr>
 																		<th>
-																			Pac
-																			Man
+																			Game
+																			2
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
 																					class="progress-bar progress-bar-striped bg-warning"
 																					role="progressbar"
 																					style="
 																						width: 50%;
 																					"
+																					title="50%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
 																	</tr>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="right"
-																		title="15%"
-																	>
+																	<tr>
 																		<th>
-																			Cooking
-																			Simulator
+																			Game
+																			3
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
-																					class="progress-bar progress-bar-striped bg-danger"
+																					class="progress-bar progress-bar-striped bg-warning"
 																					role="progressbar"
 																					style="
-																						width: 15%;
+																						width: 40%;
 																					"
+																					title="40%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
 																	</tr>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="right"
-																		title="5%"
-																	>
+																	<tr>
 																		<th>
-																			Coding
-																			Simulator
+																			Game
+																			4
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
 																					class="progress-bar progress-bar-striped bg-danger"
 																					role="progressbar"
 																					style="
-																						width: 5%;
+																						width: 25%;
 																					"
+																					title="25%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
@@ -666,112 +666,106 @@
 																class="table table-hover Tabd responsive-table table-borderless"
 															>
 																<tbody>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="left"
-																		title="90%"
-																	>
+																	<tr>
 																		<th>
-																			Coding
-																			Simulator
+																			Game
+																			1
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
-																					class="progress-bar progress-bar-striped bg-success px-4"
+																					class="progress-bar progress-bar-striped bg-success"
 																					role="progressbar"
 																					style="
-																						width: 90%;
+																						width: 80%;
 																					"
+																					title="80%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
 																	</tr>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="left"
-																		title="50%"
-																	>
+																	<tr>
 																		<th>
-																			Red
-																			Dead
-																			Redemption
+																			Game
 																			2
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
 																					class="progress-bar progress-bar-striped bg-warning"
 																					role="progressbar"
 																					style="
 																						width: 50%;
 																					"
+																					title="50%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
 																	</tr>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="left"
-																		title="30%"
-																	>
+																	<tr>
 																		<th>
-																			Last
-																			Of
-																			Us
-																			II
+																			Game
+																			3
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
 																					class="progress-bar progress-bar-striped bg-warning"
 																					role="progressbar"
 																					style="
-																						width: 30%;
+																						width: 40%;
 																					"
+																					title="40%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
 																	</tr>
-																	<tr
-																		data-toggle="tooltip"
-																		data-placement="left"
-																		title="20%"
-																	>
+																	<tr>
 																		<th>
-																			Need
-																			For
-																			Speed
-																			Heat
+																			Game
+																			4
 																		</th>
 																		<td>
 																			<div
 																				class="progress"
 																			>
+																				<!-- Hover to show % values -->
 																				<div
 																					class="progress-bar progress-bar-striped bg-danger"
 																					role="progressbar"
 																					style="
-																						width: 20%;
+																						width: 25%;
 																					"
+																					title="25%"
 																					aria-valuenow="100"
 																					aria-valuemin="0"
 																					aria-valuemax="100"
+																					data-toggle="tooltip"
+																					data-placement="left"
 																				></div>
 																			</div>
 																		</td>
@@ -815,134 +809,91 @@
 			</div>
 		</div>
 
-		<!-- featured -->
-		<div class="mx-5 p-lg-5">
+		<!-- featured games-->
+		<div class="mx-5">
 			<div class="row row-cols-2">
 				<div class="col-mb-4">
 					<div class="card m-2 bg-transparent border-0 secondaryImg">
-						<a href="https://www.youtube.com">
-							<img
-								src="utilities/featured/Youtube-Logo-light.jpg"
-								class="card-img-top rounded-lg image-hover2"
-								alt="..."
-								id="logo-black"
-							/>
-
-							<div class="layoutText-featured">
-								<div class="TextBlock2">
-									<h3 class="text-sizing">Featured</h3>
-								</div>
+						<img
+							src="utilities/featured/YouTube-Logo-white.svg"
+							class="card-img-top rounded-lg image-hover2"
+							alt="..."
+							id="logo-black"
+						/>
+						<div class="layoutText-featured">
+							<div class="TextBlock2">
+								<h3 class="text-auto">Featured</h3>
 							</div>
-						</a>
+						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
 					<div class="card m-2 bg-transparent border-0 secondaryImg">
-						<a href="https://www.spotify.com/in/">
-							<img
-								src="utilities/featured/spotify-logo.png"
-								class="card-img-top rounded-lg image-hover2 my-auto"
-								alt="..."
-							/>
-							<div class="layoutText-featured">
-								<div class="TextBlock2">
-									<h3 class="text-sizing">Featured</h3>
-								</div>
+						<img
+							src="utilities/featured/spotify-logo.png"
+							class="card-img-top rounded-lg image-hover2 my-auto"
+							alt="..."
+						/>
+						<div class="layoutText-featured">
+							<div class="TextBlock2">
+								<h3 class="text-auto">Featured</h3>
 							</div>
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Multiple games -->
-		<div class="container mt-3">
-			<div class="row">
-				<div class="col"></div>
-				<div class="col-mx-auto">
-					<button
-						class="btn btn-outline-info btn-lg"
-						id="hideandseek"
-						type="button"
-					>
-						Load more Games
-					</button>
-				</div>
-				<div class="col"></div>
-			</div>
-		</div>
-		<div class="mx-5 mt-5">
-			<div
-				class="row row-cols-2 row-cols-lg-4 row-cols-md-4 row-cols-sm-3"
-			>
+		<div class="mx-5">
+			<div class="row row-cols-3">
 				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="2"
-					>
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/games/cooking-sim.jpg"
+							src="utilities/games/Cooking sim.png"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">Cooking simulator</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/umjU1LpbkZ0
-								</h2>
+								<h4 class="text-auto">Cooking Simulator</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="3"
-					>
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/games/cyberpunk-2077.jpg"
+							src="utilities/games/Cyberpunk-2077.jpg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">Cyberpunk 2077</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/LembwKDo1Dk
-								</h2>
+								<h4 class="text-auto">Cyberpunk-2077</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="4"
-					>
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/games/uncharted-4.jpg"
+							src="utilities/games/uncharted-4.jpeg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">Uncharted 4</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/hh5HV4iic1Y
-								</h2>
+								<h4 class="text-auto">Uncharted 4</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="5"
-					>
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
 							src="utilities/games/NFS-Heat.jpg"
 							class="card-img-top rounded-lg image-hover2"
@@ -950,41 +901,29 @@
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">NFS Heat</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/9ewiJJe_nYI
-								</h2>
+								<h4 class="text-auto">NFS-Heat</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="6"
-					>
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
-							src="utilities/games/rdr2-img.jpg"
+							src="utilities/games/rdr2-img.jpeg"
 							class="card-img-top rounded-lg image-hover2"
 							alt="..."
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">Red Dead Redemption</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/eaW0tYpxyp0
-								</h2>
+								<h4 class="text-auto">RDR-2</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="7"
-					>
+					<div class="card m-2 bg-transparent secondaryImg border-0">
 						<img
 							src="utilities/games/spiderman.jpg"
 							class="card-img-top rounded-lg image-hover2"
@@ -992,287 +931,7 @@
 						/>
 						<div class="layoutText">
 							<div class="TextBlock2">
-								<h4 class="text-sizing">Marvel Spiderman</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/q4GdJVvdxss
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="8"
-					>
-						<img
-							src="utilities/games/Fonza-horizon-4.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">Fonza Horizon 4</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/zJ477xAIlgU
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="9"
-					>
-						<img
-							src="utilities/games/halo-infinity.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">Halo Infinity</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/Rh_NXwqFvHc
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="10"
-					>
-						<img
-							src="utilities/games/wasteland-3.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">Wasteland 3</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/AwBKZAOB_qw
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="11"
-					>
-						<img
-							src="utilities/games/pubg.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">PUBG</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/SuRwlgRUK80
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="12"
-					>
-						<img
-							src="utilities/games/loadt-of-us-1.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">Last of Us</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/W01L70IGBgE
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="13"
-					>
-						<img
-							src="utilities/games/watchdogs.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">WatchDogs</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/PFko4Kut39s
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="14"
-					>
-						<img
-							src="utilities/games/assasins-creed-unity.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">
-									Assasins Creed Unity
-								</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/xzCEdSKMkdU
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="15"
-					>
-						<img
-							src="utilities/games/horizon-zero-dawn.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">Horizon Zero Dawn</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/u4-FCsiF5x4
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="16"
-					>
-						<img
-							src="utilities/games/uncharted-2.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">Uncharted 2</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/tlkkceDkT88
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="17"
-					>
-						<img
-							src="utilities/games/days-gone.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">Days Gone</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/FKtaOY9lMvM
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="18"
-					>
-						<img
-							src="utilities/games/flight-sim-2020.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">
-									Flight Simulator 2020
-								</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/TYqJALPVn0Y
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="19"
-					>
-						<img
-							src="utilities/games/Cod-modern-warfare.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">COD Modern Warfare</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/zu3wZ-_IKrM
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-mb-4">
-					<div
-						class="card m-2 bg-transparent secondaryImg border-0 changeio"
-						id="20"
-					>
-						<img
-							src="utilities/games/Cod-black-ops-2.jpg"
-							class="card-img-top rounded-lg image-hover2"
-							alt="..."
-						/>
-						<div class="layoutText">
-							<div class="TextBlock2">
-								<h4 class="text-sizing">COD Black Ops II</h4>
-								<h2 hidden>
-									https://www.youtube.com/embed/F6vOWbJ46XU
-								</h2>
+								<h4 class="text-auto">Marvel Spiderman</h4>
 							</div>
 						</div>
 					</div>
@@ -1280,9 +939,10 @@
 			</div>
 		</div>
 
-		<!-- JavaScript Assets -->
+		<!-- Optional JavaScript -->
 		<script src="assets/script.js"></script>
-		<script src="assets/change.js"></script>
+		<!-- <script src="assets/change.js"></script> -->
+
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

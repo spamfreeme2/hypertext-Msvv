@@ -1,4 +1,4 @@
-$("#unmuted").hide();
+//get time
 setInterval(function () {
 	var hours = new Date().getHours();
 	if (hours >= 12) {
@@ -19,24 +19,13 @@ setInterval(function () {
 	document.getElementById("time").innerHTML = time;
 }, 1000);
 
-//Microphone Animation
-
-$("#unmuted").click(function () {
-	$(this).hide();
-	$("#muted").show();
-});
-$("#muted").click(function () {
-	$(this).hide();
-	$("#unmuted").show();
-});
-
 //tooltips
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
 
+//Dark-mode/Light mode
 var Themevar = false;
-
 $("#Theme").click(function () {
 	Themevar = !Themevar;
 	if (Themevar) {
@@ -55,8 +44,6 @@ $("#Theme").click(function () {
 			"src",
 			"utilities/featured/Youtube-Logo-dark.jpg"
 		);
-		$("svg").addClass("text-white");
-		$("svg").addClass("text-white");
 	} else {
 		$(this).text("Dark mode");
 		$("body").addClass("bg-white").removeClass("bg-dark");
@@ -75,11 +62,11 @@ $("#Theme").click(function () {
 			"text-white"
 		);
 
-		$("svg").removeClass("text-white");
 		$(".time").css("color", "black");
 	}
 });
 
+//Video closes and does not play in the background
 $(document).ready(function () {
 	$("#youtubeVideo").on("hidden.bs.modal", function () {
 		var $this = $(this).find("iframe"),
